@@ -1,4 +1,4 @@
-# PitMind 🏎️ — F1 Telemetry Platform
+# PitMind — F1 Telemetry Platform
 
 Real Formula 1 telemetry data from 2020–2026, visualised in a full-stack web dashboard.
 
@@ -44,35 +44,6 @@ npm start
 
 Frontend runs at `http://localhost:3000`
 
-## Environment Variables
-
-### backend/.env
-```
-PITMIND_API_KEY=your-secret-key-here
-ALLOWED_ORIGIN=http://localhost:3000
-```
-
-### frontend/.env
-```
-REACT_APP_API_KEY=your-secret-key-here
-REACT_APP_API_URL=http://localhost:8000/api
-```
-
-Both keys must match.
-
-## Deployment
-
-**Backend → Railway**
-1. Push repo to GitHub
-2. Connect Railway to the `backend/` folder
-3. Set environment variables in Railway dashboard
-4. Set a monthly spend limit in Railway settings
-
-**Frontend → Vercel**
-1. Connect Vercel to the `frontend/` folder
-2. Set `REACT_APP_API_KEY` and `REACT_APP_API_URL` in Vercel environment variables
-3. Update `ALLOWED_ORIGIN` in Railway to your Vercel URL
-
 ## File Structure
 
 ```
@@ -95,16 +66,6 @@ pitmind/
 ├── README.md
 └── roadmap.md
 ```
-
-## Security
-
-- API key authentication on every endpoint
-- Rate limiting per IP (slowapi)
-- CORS locked to frontend origin only
-- Input validation on all parameters
-- 90 second request timeout
-- Security headers on all responses
-- In-memory response cache (reduces compute and repeat FastF1 calls)
 
 ## Disclaimer
 
