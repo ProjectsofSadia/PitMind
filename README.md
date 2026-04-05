@@ -6,7 +6,7 @@ Real Formula 1 telemetry data from 2020–2026, visualised in a full-stack web d
 
 - **Race Results** — Full classification, gaps, points, fastest laps
 - **Lap Times** — Multi-driver lap time chart with team colors
-- **Tyre Strategy** — Visual stint chart for all 20 drivers, colour-coded by compound
+- **Tyre Strategy** — Visual stint chart for all 22 drivers, colour-coded by compound
 - **Telemetry** — Speed trace, throttle, brake, gear, RPM for any driver/lap
 - **Driver Compare** — Overlaid speed traces + speed delta chart
 - **Sector Times** — Best sector breakdown with gold highlighting for session bests
